@@ -4,14 +4,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-image: linear-gradient( to bottom, #a70f0f, rgb(97, 25, 25));  /* fundo escuro */
     color: #f8fafc;              /* texto claro = bom contraste */
     min-height: 100vh;
-
 
     /* Flexbox: empilha tudo em coluna e centraliza */
     display: flex;
@@ -20,23 +17,18 @@ body {
     justify-content: center;
     padding: 20px;
 }
-
-
 /* ===== Título ===== */
 header {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
 }
-
-
 h1 {
     font-size: 3rem;
     color: #facc15;
     text-align: center;
     font-family: fantasy;
 }
-
 
 /* ===== Conteúdo principal ===== */
 main {
@@ -163,28 +155,20 @@ main {
 #reiniciar:hover {
     background-color: #eab308;
 }
-
-
 /* ===== Telas pequenas (celular) ===== */
 @media (max-width: 500px) {
     h1 {
         font-size: 1.5rem;
     }
-
-
     #palavra {
         font-size: 1.6rem;
         letter-spacing: 4px;
     }
-
-
     .letra {
         width: 38px;
         height: 38px;
         font-size: 1rem;
     }
-
-
     .area-imagem img {
         width: 160px;
     }

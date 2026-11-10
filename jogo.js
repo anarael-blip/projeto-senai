@@ -1,9 +1,10 @@
-let palavraSecreta = 'JAVASCRIPT';
+let palavraSecreta = 'AMARELO';
 let letrasChutadas = [];
 let tracos = [];
 let erros = 0;
 let maxErros = 6;
 let imagem = document.getElementById('imagem');
+let btnPalavraSecreta = document.getElementById('imagem');
 let textoPalavra = document.getElementById('palavra');
 let textoMensagem = document.getElementById('mensagem');
 let textoErros = document.getElementById('erros');
@@ -21,6 +22,8 @@ textoMensagem.textContent = '';
 textoMensagem.className = '';
 textoErros.textContent = 'Erros: 0 de ' + maxErros;
 imagem.src = 'img/img1.png';
+
+localStorage.setItem("palavraSecreta", textoPalavra.value)
 
 
 botoesLetras.forEach(function (botao) {
